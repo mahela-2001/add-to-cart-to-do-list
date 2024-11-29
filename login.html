@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="login-container">
+            <h1>Login</h1>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="login-button">Login</button>
+            <p id="error-message" style="color: red;"></p>
+            <p>Don't have an account? <a href="#" id="signup-link">Sign up here</a></p>
+        </div>
+        <div class="signup-container" style="display: none;">
+            <h1>Sign Up</h1>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+            <button id="signup-button">Sign Up</button>
+            <p id="signup-error-message" style="color: red;"></p>
+            <p>Already have an account? <a href="#" id="login-link">Log in here</a></p>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+        <script src="login.js" type="module"></script>
+    </body>
+</html>
